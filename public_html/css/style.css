@@ -1,0 +1,247 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 11 juil. 2017, 01:57:15
+    Author     : mikco
+*/
+
+ @charset "UTF-8";
+
+/*font-family: 'Raleway', sans-serif;*/
+/*bleu clair -> #3498DB; */
+/*bleu foncé -> #2C3E50; */
+
+body,html {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Abel';
+}
+
+a,a:hoover {
+ text-decoration: none;   
+}
+
+.container-fluid{
+    padding: 0px;
+}
+
+
+h3,.modal-header {
+    color: #fff;
+    text-align: center;
+    height: 100%;
+}
+
+.separator {
+    height: 3px;
+    width: 5%;
+    border: none;
+    box-shadow: none;
+    background-color: #3498DB; 
+}
+
+label{
+  display: block-inline;
+  
+}
+img {
+    width: 100%;
+    /*height: 100%;*/
+    max-width: 100%;
+}
+
+/*header*/
+.header {
+    background-color: #3498DB;
+    height: 70px;
+    line-height: 70px;
+    
+}
+.header .modal{
+    line-height: 20px;
+}
+.logo {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 3px;
+    float: left;
+    margin-right: 20px;
+}
+
+.modal-header {
+    background-color: #3498DB;
+}
+
+.modal-footer label{
+    float: left;
+    margin-right: 15px;
+}
+
+.col-md-10{
+    border-collapse: collapse;
+    padding: 0;
+    margin: 0;
+}
+/*.menu {
+    float: right;    
+}*/
+
+.inscription {
+    float: right; 
+}
+
+.col-md-8 a {
+    color:#fff;
+    float: right;
+    margin-right: 30px;
+     
+} 
+
+.menu a:hover {
+    color: #2C3E50;
+}
+/*bannière*/
+
+.banner {
+    width: 100%;
+    max-width: 100%;
+}
+
+.ban {
+   width: 100%;
+    max-width: 100%; 
+    position: relative;
+}
+
+.ban img {
+    width: 100%;
+    max-width: 100%;
+}
+
+.inner-banner {
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    text-align: center;
+}
+
+.inner-banner h1 {
+    color: #fff;
+    text-shadow: 1px 1px 15px #000000;
+}
+
+.inner-banner .btn-custom {
+    background-color: #3498DB;
+    color: #fff;
+}
+
+.inner-banner .btn-custom:hover {
+    background-color: #2C3E50;
+}
+/*about*/
+#about {
+    text-align: center;
+    padding-top: 5%; 
+}
+
+.about article {
+    margin-top: 5%;
+    margin-bottom: 7%;
+}
+.about article h2{
+    text-align: center;
+}
+/*portfolio*/
+.portfolio {
+    background-color: #eee;
+    height: 100%;
+    margin-bottom: 7%;
+}
+
+#portfolio {
+    text-align: center;
+ }
+
+.portfolio .item-folio {
+    height: 280px;
+    /*background-color: #3498DB; */
+}
+/*contact*/
+footer {
+    background-color: #2C3E50;
+    height: auto;
+}
+
+#contact {
+    color: #fff;
+    text-align: center;
+    height: 100%;
+}
+
+.formulaireContact {
+    width: auto;
+   /* display: block;*/
+    margin-left: 0 ;
+    
+}
+
+ input {
+    margin-bottom: 20px;
+}
+ .contact-section input[type=text] {
+    height: 50px;
+    width: 400px;
+    border: none;
+}
+
+.contact-section input[type=email],.contact-section input[type="password"] {
+    height: 50px;
+    width: 400px;
+    border: none;
+}
+
+textarea {
+    width: 550px;
+    height: 100px;
+    resize: vertical;
+}
+
+.btn-custom,.label-custom {
+    background-color: #3498DB;
+    color: #fff;
+   
+}
+
+.reseau {
+    float: right; 
+    
+}
+
+.col-md-6{
+  width: 50%;
+}
+
+.form-line{
+    border-right: 100px solid #2C3E50;
+}
+.footer .texte table td{
+    vertical-align:top; 
+    color:#fff;
+    font-weight:300;
+    padding:0 12px 40px 12px;
+}
+footer p {
+    color:#fff;
+    font-weight:300;
+    vertical-align:top;
+}
+.footer label{
+    color:#fff;
+}

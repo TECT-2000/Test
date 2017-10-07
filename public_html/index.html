@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="fr">
+    <head>
+        <title>Le Site</title>
+        
+        <!-- fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Abel|Raleway" rel="stylesheet">  
+        
+        <!-- css -->
+        <link rel="stylesheet" href="css/bootstrap.min.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Oswald:700|Patua+One|Roboto+Condensed:700" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css"/> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="/js/style.js"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <!-- header -->
+        <header class="container-fluid header">
+            <div class="container">
+                 <a href="#" class="logo">Le Hemle Nje</a>
+                <nav class="menu">
+                    <a href="#contact"> Contact </a><!-- nesessite une page -->
+                    <a href="Propos.html"> A propos </a><!-- nesessite une page -->
+                    <a href="infos.html"> Infos et Actus </a><!-- nesessite une page -->
+                    <a href="Services.html"> Services </a><!-- nesessite une page -->
+                    <a href="#"> Accueil </a>
+                </nav>
+                
+                <!--<nav class="inscription">
+                 
+                 <div class="col-md-12">
+                  <button type="button" class="btn btn-custom" data-target="#loginModal" data-toggle="modal"> Connexion </button>
+                    <div  id="loginModal" class="modal fade " data-backdrop="static">
+                        <div id="login-overlay" class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header text-center">
+                                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                                    <h4 class="modal-title" id="myModalLabel"> Connexion </h4>
+                                </div>
+                                <div class="modal-body">
+                                   <div class="row">
+                                        <div class="col-xs-6">
+                                            <div class="well well-lg">
+                                                <form id="loginForm" method="POST" action="/login/" novalidate="novalidate">
+                                                    <div class="form-group">
+                                                        <label > Email </label>
+                                                        <input type="email" class="form-control"  placeholder="example@gmail.com">
+                                                        <span class="help-block"></span>
+                                                    </div>
+                                                         <div class="form-group ">
+                                                                 <label >Mot de passe</label>
+                                                                  <input type="password" class="form-control" placeholder="Mot de passe">
+                                                                   <span class="help-block"></span>
+                                                          </div>
+                                                           <div id="loginErrorMsg" class="alert alert-error hide">Email incorrect</div>
+                                                          <div class="form-group text-justify">
+                                                              
+										<input type="checkbox" tabindex="3"  name="remember" id="remember">
+										<label for="remember"> Se souvenir de moi</label>
+							   </div>
+                                                              <div class="form-group text-justify">
+                                                                  <a  href="#">Mot de passe oublié ?</a> 
+                                                              
+                                                              </div>
+                                                </form>
+                                                                  <button type="submit" class="btn btn-custom btn-block"><i class="fa fa-sign-in"></i> Connexion </button>
+                                                                  <a href="#" class="btn btn-custom btn-block"><i class="fa fa-question"></i> Aide </a>
+                                                           
+                                                          </div>
+                                                      </div>
+                                                      <div class="col-xs-6">
+                                                          <p class="lead">S'enregistrer <span class="text-success">Gratuitement</span></p>
+                                                          <ul class="list-unstyled" style="line-height: 2">
+                                                              <li><span class="fa fa-check text-success"></span> Voir toutes les nouveautés</li>
+                                                              <li><span class="fa fa-check text-success"></span> commander rapidement</li>
+                                                              <li><span class="fa fa-check text-success"></span> Recevoir un cadeau <small>(seulement pour les nouveaux utilisateurs)</small></li>
+                                                              <li><a href="#"><u>plus...</u></a></li>
+                                                          </ul>
+                                                          <p><a href="#RegisterModal" class="btn btn-custom btn-block"><i class="fa fa-registered"></i> S'inscrire </a></p>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                          </div>
+                    </div>
+                  <a class="btn btn-custom " data-target="#RegisterModal" data-toggle="modal"> Inscription </a>
+                    <div  id="RegisterModal" class="modal fade " data-backdrop="static">
+                        <div  class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header text-center">
+                                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                                    <h4 class="modal-title" > Inscription </h4>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row">
+                                         <div class="col-md-12">
+                                                    <div class="well well-lg">
+                                                            <form role="form">
+                                                                    <!--<h2>Enregistrez-vous </h2>
+                                                                    <hr class="colorgraph">
+                                                                   
+                                                                            
+                                                                    <div class="form-group">
+                                                                        <input type="text" name="first_name" id="first_name" class="form-control input-lg" placeholder="Nom" tabindex="1">
+                                                                      </div>
+                                                                     <div class="form-group">
+                                                                                            <input type="text" name="last_name" id="last_name" class="form-control input-lg" placeholder="Prénom" tabindex="2">
+                                                                      </div>
+                                                                     
+                                                                    <div class="form-group">
+                                                                            <input type="email" name="email" id="email" class="form-control input-lg" placeholder="Email " tabindex="4">
+                                                                    </div>
+                                                                    <div class="form-group">
+                                                                                            <input type="password" name="password" id="password" class="form-control input-lg" placeholder="Mot de passe" tabindex="5">
+                                                                     </div>
+                                                                    <div class="form-group">
+                                                                                            <input type="password" name="password_confirmation" id="password_confirmation" class="form-control input-lg" placeholder="Confirmer Mot de passe" tabindex="6">
+                                                                     </div>
+                                                                           
+                                                                    
+                                                                    <div class="row">
+                                                                             <div class="col-xs-8 col-sm-9 col-md-9">
+                                                                                     En cliquant sur <strong class="label label-custom">Enregistrer</strong>, Vous acceptez les <a href="#" data-toggle="modal" data-target="#t_and_c_m">Termes et les conditions d'utilisation</a> du site.
+                                                                            </div>
+                                                                    </div>
+
+                                                                    
+                                                            </form>
+                                                    
+                                                    </div>
+                                        </div>
+                                            </div>
+                                <div class="modal-footer text-center">
+                                    <button type="submit" class="btn btn-custom "><i class="fa fa-registered"></i> Enregister </button>
+                                       <a href="#" class="btn btn-custom "><i class="fa fa-question"></i> Aide </a>
+                                </div>
+                                            Modal 
+                                            <div class="modal " id="t_and_c_m"  role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog modal-lg">
+                                                            <div class="modal-content">
+                                                                    <div class="modal-header">
+                                                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                                                            <h4 class="modal-title" id="myModalLabel">Termes et conditions </h4>
+                                                                    </div>
+                                                                    <div class="modal-body">
+                                                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, itaque, modi, aliquam nostrum at sapiente .</p>
+                                                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, itaque, modi, aliquam nostrum at sapiente .</p>
+                                                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, itaque, modi, aliquam nostrum at sapiente .</p>
+                                                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, itaque, modi, aliquam nostrum at sapiente .</p>
+                                                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, itaque, modi, aliquam nostrum at sapiente .</p>
+                                                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, itaque, modi, aliquam nostrum at sapiente .</p>
+                                                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, itaque, modi, aliquam nostrum at sapiente .</p>
+                                                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, itaque, modi, aliquam nostrum at sapiente .</p>
+                                                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, itaque, modi, aliquam nostrum at sapiente .</p>
+                                                                            </div>
+                                                                    <div class="modal-footer">
+                                                                           <!-- <button type="button" class="btn btn-custom" data-dismiss="modal"> J'accepte</button>
+                                                                           <div class="row">
+                                                                               <div class="col-md-12">
+                                                                                   <label><input type="checkbox"> J'accepte les termes et conditions d'utilisation</label>
+                                                                               </div>
+                                                                           <div class="col-md-12">
+                                                                           <label><input type="checkbox"> Je n'accepte pas les termes et conditions d'utilisation</label>
+                                                                           </div>
+                                                                        </div>
+                                                            </div>
+                                                    </div>
+                                            </div>
+                                            </div>
+                                                      
+                              </div>
+                               </div>
+                             </div>
+                          </div>
+                 </div>
+                
+               </nav>-->
+            </div>
+        </header>
+        <!-- end header -->
+        
+        <!-- bannière -->
+        <section class="container-fluid banner">
+            <div class="ban">
+                <img src="img/laptop.jpg" alt="bannière du site"/>
+            </div>
+            <div class="inner-banner">
+                <h1> Bienvenue sur Le Sego </h1>
+                <button class="btn btn-custom"> Contactez nous ! </button>
+            </div>
+        </section>
+        <!-- end bannière -->
+        
+        <!-- à propos -->
+        <section class="container-fluid about">
+            <div class="container">
+                <div class="row">
+                    <h2 id="about"> A propos de nous </h2>
+                    <hr class="separator">
+                    <article class="col-md-4 col-lg-4 col-xs-12 col-sm-12">
+                        <h2> Etudes </h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit.
+
+                            Ut velit mauris, egestas sed, gravida nec, ornare ut, mi. Aenean ut orci vel massa suscipit pulvinar. Nulla sollicitudin. Fusce varius, ligula non tempus aliquam, nunc turpis ullamcorper nibh, in tempus sapien eros vitae ligula. Pellentesque rhoncus nunc et augue. Integer id felis. Curabitur aliquet pellentesque diam. Integer quis metus vitae elit lobortis egestas. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi vel erat non mauris convallis vehicula. Nulla et sapien. Integer tortor tellus, aliquam faucibus, convallis id, congue eu, quam. Mauris ullamcorper felis vitae erat. Proin feugiat, augue non elementum posuere, metus purus iaculis lectus, et tristique ligula justo vitae magna.
+
+                             Aliquam convallis sollicitudin purus. Praesent aliquam, enim at fermentum mollis, ligula massa adipiscing nisl, ac euismod nibh nisl eu lectus. Fusce vulputate sem at sapien. Vivamus leo. Aliquam euismod libero eu enim. Nulla nec felis sed leo placerat imperdiet. Aenean suscipit nulla in justo. Suspendisse cursus rutrum augue. Nulla tincidunt tincidunt mi. Curabitur iaculis, lorem vel rhoncus faucibus, felis magna fermentum augue, et ultricies lacus lorem varius purus. Curabitur eu amet.  
+                        </p>
+                    </article>
+                    <article class="col-md-4 col-lg-4 col-xs-12 col-sm-12">
+                        <h2> Expériences </h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit.
+
+                            Ut velit mauris, egestas sed, gravida nec, ornare ut, mi. Aenean ut orci vel massa suscipit pulvinar. Nulla sollicitudin. Fusce varius, ligula non tempus aliquam, nunc turpis ullamcorper nibh, in tempus sapien eros vitae ligula. Pellentesque rhoncus nunc et augue. Integer id felis. Curabitur aliquet pellentesque diam. Integer quis metus vitae elit lobortis egestas. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi vel erat non mauris convallis vehicula. Nulla et sapien. Integer tortor tellus, aliquam faucibus, convallis id, congue eu, quam. Mauris ullamcorper felis vitae erat. Proin feugiat, augue non elementum posuere, metus purus iaculis lectus, et tristique ligula justo vitae magna.
+
+                             Aliquam convallis sollicitudin purus. Praesent aliquam, enim at fermentum mollis, ligula massa adipiscing nisl, ac euismod nibh nisl eu lectus. Fusce vulputate sem at sapien. Vivamus leo. Aliquam euismod libero eu enim. Nulla nec felis sed leo placerat imperdiet. Aenean suscipit nulla in justo. Suspendisse cursus rutrum augue. Nulla tincidunt tincidunt mi. Curabitur iaculis, lorem vel rhoncus faucibus, felis magna fermentum augue, et ultricies lacus lorem varius purus. Curabitur eu amet.  
+                        </p>
+                    </article>
+                    <article class="col-md-4 col-lg-4 col-xs-12 col-sm-12">
+                        <h2> Loisirs </h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit.
+
+                            Ut velit mauris, egestas sed, gravida nec, ornare ut, mi. Aenean ut orci vel massa suscipit pulvinar. Nulla sollicitudin. Fusce varius, ligula non tempus aliquam, nunc turpis ullamcorper nibh, in tempus sapien eros vitae ligula. Pellentesque rhoncus nunc et augue. Integer id felis. Curabitur aliquet pellentesque diam. Integer quis metus vitae elit lobortis egestas. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi vel erat non mauris convallis vehicula. Nulla et sapien. Integer tortor tellus, aliquam faucibus, convallis id, congue eu, quam. Mauris ullamcorper felis vitae erat. Proin feugiat, augue non elementum posuere, metus purus iaculis lectus, et tristique ligula justo vitae magna.
+
+                             Aliquam convallis sollicitudin purus. Praesent aliquam, enim at fermentum mollis, ligula massa adipiscing nisl, ac euismod nibh nisl eu lectus. Fusce vulputate sem at sapien. Vivamus leo. Aliquam euismod libero eu enim. Nulla nec felis sed leo placerat imperdiet. Aenean suscipit nulla in justo. Suspendisse cursus rutrum augue. Nulla tincidunt tincidunt mi. Curabitur iaculis, lorem vel rhoncus faucibus, felis magna fermentum augue, et ultricies lacus lorem varius purus. Curabitur eu amet.  
+                        </p>
+                    </article>
+                </div>
+            </div>    
+        </section>
+        <!-- end à propos -->
+        
+        <!-- portfolio -->
+        <section class="container-fluid portfolio">
+            <div class="container">
+                <h2 id="portfolio"> Galerie </h2>
+                <hr class="separator">
+                <article class="col-md-3 col-lg-3 col-xs-12 col-sm-12 item-folio">
+                    <img src="img/ban.jpg" alt="bannière du site"/>
+                </article>
+                <article class="col-md-3 col-lg-3 col-xs-12 col-sm-12 item-folio">
+                   <img src="img/people.jpg" alt="bannière du site"/>
+                </article>
+               <article class="col-md-3 col-lg-3 col-xs-12 col-sm-12 item-folio">
+                    <img src="img/6452.jpg" alt="bannière du site"/>
+                </article>
+                <article class="col-md-3 col-lg-3 col-xs-12 col-sm-12 item-folio">
+                    <img src="img/people.jpg" alt="bannière du site"/>
+                </article>
+                <article class="col-md-3 col-lg-3 col-xs-12 col-sm-12 item-folio">
+                    <img src="img/woman.jpg" alt="bannière du site"/>
+                </article>
+                <article class="col-md-3 col-lg-3 col-xs-12 col-sm-12 item-folio">
+                    <img src="img/67.jpg" alt="bannière du site"/>
+                </article>
+                <article class="col-md-3 col-lg-3 col-xs-12 col-sm-12 item-folio">
+                    <img src="img/laptop.jpg" alt="bannière du site"/>
+                </article>
+                <article class="col-md-3 col-lg-3 col-xs-12 col-sm-12 item-folio">
+                    <img src="img/239.jpg" alt="bannière du site"/>
+                </article>
+            </div>
+        </section>
+        <!-- end portfolio -->
+        
+        <!-- footer / contact -->
+        <footer  class="footer container-fluid content-section">
+            <div >
+			<div class="container">
+                            <h2 id="contact">Contactez Nous</h2>
+                            <hr class="separator">
+				<form class="contact-section">
+					<div class="col-md-4 form-line">
+			  			<div class="form-group">
+			  		          <label for="exampleInputUsername"> Nom </label>
+					    	  <input type="text" class="form-control"  placeholder=" Mon bon petit">
+				  		</div>
+				  		<div class="form-group">
+					    	<label for="exampleInputEmail">Email </label>
+					    	<input type="email" class="form-control" id="exampleInputEmail" placeholder=" monbonpetit@gmail.com">
+					  	</div>	
+					  <div class="form-group">
+			  				<label for ="description"> Message</label>
+			  			 	<textarea  class="form-control" id="description" placeholder="Entrer votre message"></textarea>
+			  			</div>
+			  			<div>
+
+			  				<button type="button" class="btn btn-custom submit"><i class="fa fa-paper-plane" aria-hidden="true"></i>  Send Message</button>
+			  			</div>
+			  		</div>
+			  		<div class="col-md-6 col-lg-3 texte pull-right">
+                                            <div class="form-group">
+                                                 <table class="mtop">
+                                                      <tbody><tr>
+                                                        <td><strong>    Adresse:      </strong></td>
+                                                        <td> 484 Douala Cameroun
+                                                       </td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td><strong>   Téléphone:    </strong></td>
+                                                        <td>+90 422 341 06 60- 4602<br>+90 422 444 19 96 - 4602</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td><strong>E-Mail: </strong></td>
+                                                        <td>S9+ego@gmail.com</td>
+                                                      </tr>
+                                                    </tbody></table>
+                                            <div >
+			  			<p>Rejoignez nous sur Facebook,Youtube,Instagram.</p>
+                                                 <ul class="list-inline banner-social-buttons">
+                                                   <li><a href="#" class="btn btn-custom btn-lg"><i class="fa fa-facebook"> <span class="network-name">Facebook</span></i></a></li>
+                                                   <li><a href="#" class="btn btn-custom btn-lg"><i class="fa fa-youtube-play"> <span class="network-name">Youtube</span></i></a></li>
+                                                   <li><a href="#" class="btn btn-custom btn-lg"><i class="fa fa-instagram"> <span class="network-name">Instagram</span></i></a></li>
+                                                 </ul>
+                                            </div>
+					</div>
+                                        </div>      
+				</form>
+                            
+			</div>
+                      <p id="contact">
+                            Copyright (c) 2017 Copyright Le Nego All rights Reserved.  
+                        </p>
+                   
+               </div>
+        </footer> 
+        <!-- end footer / contact -->
+    </body>
+</html>
